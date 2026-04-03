@@ -2,85 +2,92 @@
 // FitPulse - Tu Rutina Diaria
 // ================================
 
-// Datos de rutinas por día de la semana (0=Domingo, 1=Lunes, etc.)
+// Datos de rutinas optimizados para Ectomorfos (Foco: Hipertrofia + Planche + Postura)
+// Equipo: Banda, Mancuernas 1kg, Tabla de flexiones, Pared.
 const WORKOUTS = {
   0: { // Domingo
     type: 'rest',
-    name: 'Descanso + Movilidad',
-    emoji: '🧘'
+    name: 'Movilidad Postural + Técnica Handstand',
+    emoji: '🧘',
+    exercises: [
+      { name: 'Movilidad de muñecas', detail: '5 min', emoji: '🖐️' },
+      { name: 'Práctica de Handstand en pared', detail: '10 min técnico', emoji: '🤸' },
+      { name: 'Estiramiento torácico', detail: '3×30 s', emoji: '🐈' }
+    ]
   },
 
   1: { // Lunes
     type: 'workout',
-    name: 'Upper Body Fuerza + Planche',
+    name: 'Empuje A: Fuerza & Planche Lean',
     emoji: '💪',
     exercises: [
-      { name: 'Planche lean', detail: '4×12–15 s', emoji: '📐' },
-      { name: 'Flexiones clásicas', detail: '4×10–15', emoji: '🫸' },
-      { name: 'Pike push-ups', detail: '4×8–12', emoji: '🔻' },
-      { name: 'Flexiones diamante', detail: '3×8–12', emoji: '💎' },
-      { name: 'Hollow body hold', detail: '3×25–30 s', emoji: '🧱' }
+      { name: 'Planche Lean (Protracción máx)', detail: '4×20 s', emoji: '📐' },
+      { name: 'Pseudo Planche Push-ups', detail: '3×8–10 (Tempo 3-1-1-0)', emoji: '🚀' },
+      { name: 'Pike Push-ups (Pies en suelo)', detail: '3×10', emoji: '🔻' },
+      { name: 'Flexiones en tabla (Agarre ancho)', detail: '3×AMRAP', emoji: '🫸' },
+      { name: 'Hollow Body Hold', detail: '4×30 s', emoji: '🧱' }
     ]
   },
 
   2: { // Martes
     type: 'workout',
-    name: 'Upper Técnico + Core (Pre Artes Marciales)',
-    emoji: '⚙️',
+    name: 'Piernas Explosivas + Core',
+    emoji: '🦵',
     exercises: [
-      { name: 'Planche lean', detail: '3×10–12 s', emoji: '📏' },
-      { name: 'Remo con banda/toalla', detail: '3×12–15', emoji: '🪢' },
-      { name: 'Curl bíceps con banda', detail: '3×12–15', emoji: '💪' },
-      { name: 'Hollow rocks', detail: '3×15–20', emoji: '🔄' }
+      { name: 'Bulgarian Split Squat', detail: '4×10/pierna', emoji: '🪜' },
+      { name: 'Zancadas explosivas', detail: '3×12/pierna', emoji: '💥' },
+      { name: 'Puente de glúteo unipodal', detail: '3×15/pierna', emoji: '🌉' },
+      { name: 'Elevación de talones', detail: '4×20', emoji: '🩰' },
+      { name: 'Compresión abdominal (sentado)', detail: '3×10 pulsos', emoji: '📉' }
     ]
   },
 
   3: { // Miércoles
-    type: 'rest',
-    name: 'Descanso Total',
-    emoji: '😴'
+    type: 'workout',
+    name: 'Empuje B: Hombros & Postura',
+    emoji: '⚙️',
+    exercises: [
+      { name: 'Wall Handstand Hold', detail: '4×30–45 s', emoji: '🧱' },
+      { name: 'Scapular Push-ups con banda', detail: '3×15', emoji: '📎' },
+      { name: 'Flexiones Diamante (en tabla)', detail: '3×10–12', emoji: '💎' },
+      { name: 'Vuelos laterales (Manc. 1kg)', detail: '3×20 (lento)', emoji: '🦅' },
+      { name: 'Y-W-T Extensions (Postura)', detail: '3×12', emoji: '👐' }
+    ]
   },
 
   4: { // Jueves
     type: 'workout',
-    name: 'Espalda Alta + Escápulas + Core (AAM)',
-    emoji: '🦾',
+    name: 'Full Body Híbrido + Hipertrofia',
+    emoji: '🔥',
     exercises: [
-      { name: 'Remo con banda/toalla', detail: '4×10–15', emoji: '🪢' },
-      { name: 'Scapular retractions', detail: '3×12–15', emoji: '📎' },
-      { name: 'Reverse snow angels', detail: '3×12', emoji: '❄️' },
-      { name: 'Hollow hold', detail: '3×20–25 s', emoji: '🧱' },
-      { name: 'Planche lean técnico', detail: '2×10 s', emoji: '📐' }
+      { name: 'Planche Lean con banda', detail: '4×20 s', emoji: '📐' },
+      { name: 'Flexiones Arqueras', detail: '3×8/lado', emoji: '🏹' },
+      { name: 'Sentadilla Cosaca', detail: '3×12', emoji: '🦀' },
+      { name: 'Superman Holds (Espalda baja)', detail: '3×30 s', emoji: '🦸' },
+      { name: 'Hollow Rocks', detail: '3×20', emoji: '🔄' }
     ]
   },
 
   5: { // Viernes
-    type: 'workout',
-    name: 'Piernas Completas',
-    emoji: '🦵',
-    exercises: [
-      { name: 'Sentadilla profunda', detail: '4×15–20', emoji: '🏋️' },
-      { name: 'Bulgarian split squat', detail: '4×10–12/ pierna', emoji: '🪜' },
-      { name: 'Squat jumps', detail: '3×10', emoji: '🦘' },
-      { name: 'Elevación de talones', detail: '4×20–25', emoji: '🩰' },
-      { name: 'Glute bridge', detail: '3×15–20', emoji: '🌉' }
-    ]
+    type: 'rest',
+    name: 'Descanso Total / Recuperación',
+    emoji: '😴',
+    detail: 'Prioriza sueño (9h) y superávit calórico.'
   },
 
   6: { // Sábado
     type: 'workout',
-    name: 'Upper Body + Planche (Día Clave)',
-    emoji: '🔥',
+    name: 'Día Clave: Planche & Volumen Upper',
+    emoji: '🚀',
     exercises: [
-      { name: 'Planche lean', detail: '5×12–20 s', emoji: '📐' },
-      { name: 'Tuck planche hold', detail: '3×8–12 s', emoji: '🧠' },
-      { name: 'Flexiones agarre variable', detail: '4×8–12', emoji: '🫸' },
-      { name: 'Pike push-ups', detail: '3×8–10', emoji: '🔻' },
-      { name: 'Band pull-aparts', detail: '3×15', emoji: '🪢' }
+      { name: 'Planche Lean (Máxima inclinación)', detail: '5×15 s', emoji: '📐' },
+      { name: 'Pseudo Planche Push-ups', detail: '4×8', emoji: '🏗️' },
+      { name: 'Pike Push-ups (Pies elevados)', detail: '3×8', emoji: '🔻' },
+      { name: 'Flexiones en tabla (Codos pegados)', detail: '3×Max', emoji: '🦾' },
+      { name: 'Band Pull-aparts (Hombro post.)', detail: '4×20', emoji: '🪢' }
     ]
   }
 };
-
 // Desayunos por día
 const MEALS = {
   0: {

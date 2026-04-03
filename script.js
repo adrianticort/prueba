@@ -95,43 +95,43 @@ const WORKOUTS = {
 const MEALS = {
   0: { // Domingo: Recuperación
     breakfast: { name: 'Tostada Francesa Pro', desc: '2 rebanadas pan molde + 2 huevos + chorro leche entera + canela + miel + nueces.', protein: 25, carbs: 65, fat: 22, kcal: 558 },
-    snack: { name: 'Yogur Griego con Granola', desc: '1 yogur griego + puñado grande de granola + 1 cda de mantequilla de cacahuete.', protein: 18, carbs: 40, fat: 25, kcal: 457 },
+    lunch: { name: 'Yogur Griego con Granola', desc: '1 yogur griego + puñado grande de granola + 1 cda de mantequilla de cacahuete.', protein: 18, carbs: 40, fat: 25, kcal: 457 },
     dinner: { name: 'Pizza Casera de Pollo (Sartén)', desc: 'Tortilla de trigo grande + tomate + queso mozzarella + pollo desmenuzado + orégano.', protein: 35, carbs: 30, fat: 20, kcal: 440 }
   },
 
   1: { // Lunes: Empuje A (Fuerza)
     breakfast: { name: 'Tortitas de Avena y Plátano', desc: '60g avena + 1 plátano + 2 huevos + miel. Batir y a la sartén.', protein: 26, carbs: 75, fat: 18, kcal: 566 },
-    snack: { name: 'Batido Gainer Casero', desc: '400ml leche entera + 1 plátano + 2 cdas mantequilla cacahuete + cacao.', protein: 30, carbs: 55, fat: 35, kcal: 655 },
+    lunch: { name: 'Batido Gainer Casero', desc: '400ml leche entera + 1 plátano + 2 cdas mantequilla cacahuete + cacao.', protein: 30, carbs: 55, fat: 35, kcal: 655 },
     dinner: { name: 'Quesadillas de Pollo Airfryer', desc: '2 tortillas trigo + 150g pollo + mucho queso + especias. 8 min a 200°C.', protein: 45, carbs: 42, fat: 28, kcal: 600 }
   },
 
   2: { // Martes: Piernas
     breakfast: { name: 'Sándwich Club Proteico', desc: '3 pisos de pan + 2 huevos fritos + 1 loncha queso + tomate + aguacate.', protein: 28, carbs: 50, fat: 30, kcal: 582 },
-    snack: { name: 'Bowl de Frutos Secos y Fruta', desc: 'Puñado grande de nueces + 1 manzana + 1 yogur natural con miel.', protein: 15, carbs: 45, fat: 32, kcal: 528 },
+    lunch: { name: 'Bowl de Frutos Secos y Fruta', desc: 'Puñado grande de nueces + 1 manzana + 1 yogur natural con miel.', protein: 15, carbs: 45, fat: 32, kcal: 528 },
     dinner: { name: 'Fajitas de Ternera Rápidas', desc: '150g ternera tiras + cebolla + pimiento + guacamole. Saltear todo.', protein: 38, carbs: 35, fat: 25, kcal: 517 }
   },
 
   3: { // Miércoles: Empuje B (Hombros)
     breakfast: { name: 'Bowl de Yogur y Chía', desc: '2 yogures griegos + 30g chía + avena seca + frutos rojos + miel.', protein: 22, carbs: 55, fat: 24, kcal: 524 },
-    snack: { name: 'Sándwich de Crema de Cacahuete', desc: '2 rebanadas pan integral + 2 cdas generosas de crema + 1 plátano laminado.', protein: 18, carbs: 60, fat: 28, kcal: 564 },
+    lunch: { name: 'Sándwich de Crema de Cacahuete', desc: '2 rebanadas pan integral + 2 cdas generosas de crema + 1 plátano laminado.', protein: 18, carbs: 60, fat: 28, kcal: 564 },
     dinner: { name: 'Nuggets de Pollo "Fit" Airfryer', desc: 'Pechuga troceada rebozada en copos de maíz machacados. 12 min a 200°C.', protein: 42, carbs: 30, fat: 12, kcal: 396 }
   },
 
   4: { // Jueves: Full Body
     breakfast: { name: 'Huevos Revueltos Potentes', desc: '3 huevos + chorro leche + 50g queso + 2 tostadas con aceite de oliva.', protein: 32, carbs: 40, fat: 35, kcal: 603 },
-    snack: { name: 'Batido de Chocolate y Avena', desc: '300ml leche + 40g avena + cacao + puñado de almendras trituradas.', protein: 22, carbs: 48, fat: 26, kcal: 514 },
+    lunch: { name: 'Batido de Chocolate y Avena', desc: '300ml leche + 40g avena + cacao + puñado de almendras trituradas.', protein: 22, carbs: 48, fat: 26, kcal: 514 },
     dinner: { name: 'Patatas con Queso y Bacon', desc: 'Patata cocida en cubos (Airfryer) + tiras pollo + queso fundido.', protein: 35, carbs: 50, fat: 22, kcal: 538 }
   },
 
   5: { // Viernes: DESCANSO TOTAL
     breakfast: { name: 'Porridge de Avena y Nutella', desc: 'Avena cocida con leche + 1 cda cacao/avellana + nueces + semillas.', protein: 16, carbs: 65, fat: 20, kcal: 504 },
-    snack: { name: 'Bocadillo de Atún y Huevo', desc: 'Pan de barra + 2 latas atún + 1 huevo cocido + mayonesa.', protein: 35, carbs: 50, fat: 22, kcal: 538 },
+    lunch: { name: 'Bocadillo de Atún y Huevo', desc: 'Pan de barra + 2 latas atún + 1 huevo cocido + mayonesa.', protein: 35, carbs: 50, fat: 22, kcal: 538 },
     dinner: { name: 'Hamburguesa de Pollo Casera', desc: 'Pan burger + 150g pollo + queso + aguacate + tomate.', protein: 40, carbs: 40, fat: 25, kcal: 545 }
   },
 
   6: { // Sábado: Día Clave Planche
     breakfast: { name: 'Tostadas de Aguacate y Salmón', desc: '2 tostadas grandes + 1 aguacate entero + salmón ahumado o 2 huevos.', protein: 24, carbs: 45, fat: 32, kcal: 564 },
-    snack: { name: 'Bowl Gainer Express', desc: '1 plátano troceado + 1 yogur griego + puñado de cereales + miel.', protein: 14, carbs: 60, fat: 12, kcal: 404 },
+    lunch: { name: 'Bowl Gainer Express', desc: '1 plátano troceado + 1 yogur griego + puñado de cereales + miel.', protein: 14, carbs: 60, fat: 12, kcal: 404 },
     dinner: { name: 'Burrito de Arroz y Pollo', desc: 'Tortilla grande + arroz sobrado comida + pollo + queso. Tostar en sartén.', protein: 38, carbs: 55, fat: 18, kcal: 534 }
   }
 };

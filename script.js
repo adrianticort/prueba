@@ -443,7 +443,7 @@ function renderDayContent() {
             <span class="macro protein">🥩 ${meals.breakfast.protein}g prot</span>
             <span class="macro carbs">🍞 ${meals.breakfast.carbs}g carbs</span>
             <span class="macro fat">🥑 ${meals.breakfast.fat}g grasa</span>
-            <span class="macro calories">🔥 ${meals.breakfast.calories} kcal</span>
+            <span class="macro calories">🔥 ${meals.breakfast.kcal} kcal</span>
           </div>
         ` : ''}
       </div>
@@ -460,7 +460,7 @@ function renderDayContent() {
             <span class="macro protein">🥩 ${meals.lunch.protein}g prot</span>
             <span class="macro carbs">🍞 ${meals.lunch.carbs}g carbs</span>
             <span class="macro fat">🥑 ${meals.lunch.fat}g grasa</span>
-            <span class="macro calories">🔥 ${meals.lunch.calories} kcal</span>
+            <span class="macro calories">🔥 ${meals.lunch.kcal} kcal</span>
           </div>
         ` : ''}
       </div>
@@ -477,7 +477,7 @@ function renderDayContent() {
             <span class="macro protein">🥩 ${meals.dinner.protein}g prot</span>
             <span class="macro carbs">🍞 ${meals.dinner.carbs}g carbs</span>
             <span class="macro fat">🥑 ${meals.dinner.fat}g grasa</span>
-            <span class="macro calories">🔥 ${meals.dinner.calories} kcal</span>
+            <span class="macro calories">🔥 ${meals.dinner.kcal} kcal</span>
           </div>
         ` : ''}
       </div>

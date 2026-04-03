@@ -1,8 +1,7 @@
 # Monoslocos Fitness 💪🐵
 
-**Tu entrenador personal y nutricionista digital.** Una aplicación web diseñada para gestionar y seguir un plan de entrenamiento y nutrición personalizado.
+**Tu entrenador personal y nutricionista digital.** Una aplicación web diseñada para gestionar y seguir un plan de entrenamiento y nutrición personalizado solo y exclusivamente para su creador.
 
-![Captura de pantalla de Monoslocos Fitness](URL_DE_TU_CAPTURA_DE_PANTALLA_AQUÍ)
 
 <!--
 INSTRUCCIÓN:

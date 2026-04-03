@@ -19,6 +19,7 @@
   --accent-2: #4ecdc4;
   --accent-3: #ffe66d;
   --accent-4: #a855f7;
+   --accent-5: #ff9f43;
   --gradient-fire: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
   --gradient-ocean: linear-gradient(135deg, #4ecdc4 0%, #44a3f1 100%);
   --gradient-sun: linear-gradient(135deg, #ffe66d 0%, #ff9f43 100%);
@@ -541,6 +542,7 @@ body {
 .macro.protein { color: var(--accent-1); }
 .macro.carbs { color: var(--accent-3); }
 .macro.fat { color: var(--accent-4); }
+.macro.calories { color: var(--accent-5);}
 
 /* Progress Section */
 .progress-grid {

@@ -492,7 +492,7 @@ function renderDayContent() {
     monthCalendar += `<div class="${classes}">${d}</div>`;
   }
 
-  const progressHTML = `
+  const progressHTML =
     <div class="section-card">
       <div class="section-header">
         <h3 class="section-title">

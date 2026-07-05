@@ -79,8 +79,7 @@ const WORKOUTS = {
       { name: 'Flexiones en tabla (Codos pegados)', detail: '3×Max', emoji: '🦾' },
       { name: 'Band Pull-aparts (Hombro post.)', detail: '4×20', emoji: '🪢' }
     ]
-  }
-};
+},
 
   6: { // Sabado
     type: 'rest',
@@ -91,7 +90,7 @@ const WORKOUTS = {
       { name: 'Superávit calórico', detail: 'Comer limpio y constante', emoji: '🍽️' }
     ]
   }
-  },
+  };
 
 // Plan de alimentacion de alta densidad calorica - Reto +3kg (Ectomorfo)
 // 4 comidas al dia: Desayuno, Almuerzo, Merienda y Cena.

@@ -671,7 +671,13 @@ function init() {
     $('#statsModal').classList.add('hidden');
   });
 
-  $('.modal-backdrop').addEventListener('click', () => {
+  const backdrop = $('.modal-backdrop');
+if (backdrop) {
+  backdrop.addEventListener('click',() => {
+    $('#statsModal').classList.add('hidden');
+  });
+}
+/*  $('.modal-backdrop').addEventListener('click', () => {
     $('#statsModal').classList.add('hidden');
   });
 }

@@ -86,7 +86,10 @@ const WORKOUTS = {
     type: 'rest',
     name: 'Descanso Total / Recuperacion',
     emoji: '😴',
-    detail: 'Prioriza sueno (9h) y superavit calorico.'
+    exercises: [
+      { name: 'Prioriza sueño (9h)', detail: 'Descanso total', emoji: '🛌' },
+      { name: 'Superávit calórico', detail: 'Comer limpio y constante', emoji: '🍽️' }
+    ]
   }
   },
 

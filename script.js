@@ -18,7 +18,7 @@ const WORKOUTS = {
 
   1: { // Lunes
     type: 'workout',
-    name: 'Empuje A: Fuerza & Planche Lean',
+    name: 'Espalda-Biceps',
     emoji: '💪',
     exercises: [
       { name: 'Planche Lean (Protraccion max)', detail: '4×20 s', emoji: '📐' },
@@ -44,7 +44,7 @@ const WORKOUTS = {
 
   3: { // Miercoles
     type: 'workout',
-    name: 'Empuje B: Hombros & Postura',
+    name: 'Pierna',
     emoji: '⚙️',
     exercises: [
       { name: 'Wall Handstand Hold', detail: '4×30-45 s', emoji: '🧱' },
@@ -69,13 +69,6 @@ const WORKOUTS = {
   },
 
   5: { // Viernes
-    type: 'rest',
-    name: 'Descanso Total / Recuperacion',
-    emoji: '😴',
-    detail: 'Prioriza sueno (9h) y superavit calorico.'
-  },
-
-  6: { // Sabado
     type: 'workout',
     name: 'Dia Clave: Planche & Volumen Upper',
     emoji: '🚀',
@@ -88,6 +81,13 @@ const WORKOUTS = {
     ]
   }
 };
+
+  6: { // Sabado
+    type: 'rest',
+    name: 'Descanso Total / Recuperacion',
+    emoji: '😴',
+    detail: 'Prioriza sueno (9h) y superavit calorico.'
+  },
 
 // Plan de alimentacion de alta densidad calorica - Reto +3kg (Ectomorfo)
 // 4 comidas al dia: Desayuno, Almuerzo, Merienda y Cena.

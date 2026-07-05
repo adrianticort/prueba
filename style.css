@@ -19,7 +19,7 @@
   --accent-2: #4ecdc4;
   --accent-3: #ffe66d;
   --accent-4: #a855f7;
-   --accent-5: #ff9f43;
+  --accent-5: #ff9f43;
   --gradient-fire: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
   --gradient-ocean: linear-gradient(135deg, #4ecdc4 0%, #44a3f1 100%);
   --gradient-sun: linear-gradient(135deg, #ffe66d 0%, #ff9f43 100%);
@@ -503,6 +503,52 @@ body {
   margin-bottom: 10px;
 }
 
+.meal-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.meal-card:active {
+  transform: scale(0.98);
+}
+
+.meal-card.done {
+  background: rgba(78, 205, 196, 0.12);
+  border-color: var(--accent-2);
+}
+
+.meal-card.done .meal-name {
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+.meal-check {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  margin-left: auto;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.meal-card.done .meal-check {
+  background: var(--gradient-ocean);
+  border-color: transparent;
+}
+
+.exercise-item.no-track {
+  cursor: default;
+}
+
+.exercise-item.no-track:active {
+  transform: none;
+}
+
 .meal-icon {
   font-size: 1.5rem;
 }
@@ -542,7 +588,7 @@ body {
 .macro.protein { color: var(--accent-1); }
 .macro.carbs { color: var(--accent-3); }
 .macro.fat { color: var(--accent-4); }
-.macro.calories { color: var(--accent-5);}
+.macro.calories { color: var(--accent-5); }
 
 /* Progress Section */
 .progress-grid {

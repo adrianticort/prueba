@@ -79,18 +79,18 @@ const WORKOUTS = {
       { name: 'Flexiones en tabla (Codos pegados)', detail: '3×Max', emoji: '🦾' },
       { name: 'Band Pull-aparts (Hombro post.)', detail: '4×20', emoji: '🪢' }
     ]
-},
+  },
 
   6: { // Sabado
     type: 'rest',
     name: 'Descanso Total / Recuperacion',
     emoji: '😴',
     exercises: [
-      { name: 'Prioriza sueño (9h)', detail: 'Descanso total', emoji: '🛌' },
-      { name: 'Superávit calórico', detail: 'Comer limpio y constante', emoji: '🍽️' }
+      { name: 'Prioriza sueno (9h)', detail: 'Descanso absoluto muscular', emoji: '🛌' },
+      { name: 'Superavit calorico', detail: 'Comer limpio y constante', emoji: '🥞' }
     ]
   }
-  };
+};
 
 // Plan de alimentacion de alta densidad calorica - Reto +3kg (Ectomorfo)
 // 4 comidas al dia: Desayuno, Almuerzo, Merienda y Cena.
@@ -130,7 +130,7 @@ const MEALS = {
     dinner: { name: 'Patatas con Queso y Bacon (Airfryer)', desc: '2 patatas en cubos con aceite + tiras de pollo + bacon + queso fundido.', protein: 36, carbs: 55, fat: 24, kcal: 580 }
   },
 
-  5: { // Viernes (Descanso)
+  5: { // Viernes
     breakfast: { name: 'Porridge de Avena y Nutella', desc: 'Avena cocida con leche entera + 1 cda grande de Nutella + nueces + semillas.', protein: 18, carbs: 68, fat: 22, kcal: 530 },
     lunch: { name: 'Bocadillo de Atun Completo', desc: 'Pan de barra o 2 pitas + 2 latas de atun + 1 huevo cocido + mayonesa.', protein: 38, carbs: 52, fat: 22, kcal: 560 },
     snack: { name: 'Batido Express', desc: '350ml leche entera + 1 yogur griego + 1 platano + 1 cda de crema de cacahuete.', protein: 24, carbs: 48, fat: 20, kcal: 480 },
@@ -515,7 +515,7 @@ function renderDayContent() {
           <div class="stat-label">🍽️ Comidas registradas</div>
         </div>
         <div class="stat-card">
-          <div class="stat-value">${Math.round((totalDaysCompleted / today.getDate()) * 100)}%</div>
+          <div class="stat-value">${today.getDate() > 0 ? Math.round((totalDaysCompleted / today.getDate()) * 100) : 0}%</div>
           <div class="stat-label">🎯 Consistencia</div>
         </div>
       </div>
@@ -671,15 +671,13 @@ function init() {
     $('#statsModal').classList.add('hidden');
   });
 
+  // Corregido: Se verifica la existencia del backdrop antes de anadir el evento
   const backdrop = $('.modal-backdrop');
-if (backdrop) {
-  backdrop.addEventListener('click',() => {
-    $('#statsModal').classList.add('hidden');
-  });
-}
-/*  $('.modal-backdrop').addEventListener('click', () => {
-    $('#statsModal').classList.add('hidden');
-  });
+  if (backdrop) {
+    backdrop.addEventListener('click', () => {
+      $('#statsModal').classList.add('hidden');
+    });
+  }
 }
 
 // Iniciar app cuando cargue el DOM

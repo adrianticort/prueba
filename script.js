@@ -87,6 +87,7 @@ const WORKOUTS = {
     name: 'Descanso Total / Recuperacion',
     emoji: '😴',
     detail: 'Prioriza sueno (9h) y superavit calorico.'
+  }
   },
 
 // Plan de alimentacion de alta densidad calorica - Reto +3kg (Ectomorfo)
